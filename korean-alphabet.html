@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Korean language</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/kk.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                })
+            })
+        })
+    </script>
+</head>
+
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-black navbar-dark border-bottom" style="height:auto">
+        <div class="container-fluid">
+            <div class="fs-4 fw-bold me-5 text-warning " href="#">Korean-Hangeul</div>
+            <button class="m-auto border rounded" type=" button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-warning " href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Korean(Hangeul) </a>
+                        <ul class="dropdown-menu links bg-black">
+                            <li><a class="dropdown-item bg-warning text-black fw-bold" href="#">Korean Alphabet</a></li>
+                            <li><a class="dropdown-item " href="korean-words.html">Korean Words</a></li>
+                            <li><a class="dropdown-item" href="korean-phrases.html">Korean
+                                    Phrases</a></li>
+                            <li><a class="dropdown-item " href="numbers.html">Numbers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <input class="border rounded ps-2 me-2" id="myInput" type="text" placeholder="Search">
+
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content  bg-dark text-white">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">About</h1>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    We are Korean-Hangeul and our simple mission is to try and aid foreigners currently
+                    living/working/studying/visiting South Korea with there Korean Language Skills and more.<br> This is
+                    a free website to learn korean.<br>
+                    Hope, You enjoy it!! </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start bg-black text-white border-end" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title " id="offcanvasWithBothOptionsLabel">Korean Words</h5>
+            <button type="button" class="btn-close btn btn-light bg-light" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="links">
+                <a href="#alphabet">Korean Keyboard Alphabet</a>
+                <a href="#consonant">Korean Consonant</a>
+                <a href="#vowel">Korean Vowel</a>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class=" bg-black text-white px-4 " id="myTable" style=" padding-top:30px; padding-bottom:30px;">
+        <h6 id="alphabet" class="padd">Korean Keyboard Alphabet</h6>
+        <div class="container-fluid text-center border">
+            <div class="row">
+                <div class="col border">Q<br>ㅂ<br>ㅃ</div>
+                <div class="col border">W<br>ㅈ<br>ㅉ</div>
+                <div class="col border">E<br>ㄷ<br>ㄸ</div>
+                <div class="col border">R<br>ㄱ<br>ㄲ</div>
+                <div class="col border">T<br>ㅅ<br>ㅆ</div>
+                <div class="col border">Y<br>ㅛ</div>
+                <div class="col border">U<br>ㅕ</div>
+                <div class="col border">I<br>ㅑ</div>
+                <div class="col border">O<br>ㅐ</div>
+                <div class="col border">P<br>ㅔ</div>
+
+            </div>
+            <div class="row">
+                <div class="col border">A<br>ㅁ</div>
+                <div class="col border">S<br>ㄴ</div>
+                <div class="col border">D<br>ㅇ</div>
+                <div class="col border">F<br>ㄹ</div>
+                <div class="col border">G<br>ㅎ</div>
+                <div class="col border">H<br>ㅗ</div>
+                <div class="col border">J<br>ㅓ</div>
+                <div class="col border">K<br>ㅏ</div>
+                <div class="col border">L<br>ㅣ</div>
+            </div>
+            <div class="row">
+                <div class="col border">Z<br>ㅋ</div>
+                <div class="col border">X<br>ㅌ</div>
+                <div class="col border">C<br>ㅊ</div>
+                <div class="col border">V<br>ㅍ</div>
+                <div class="col border">B<br>ㅠ</div>
+                <div class="col border">N<br>ㅜ</div>
+                <div class="col border">M<br>ㅡ</div>
+
+
+            </div>
+        </div>
+        <h6 id="consonant" class="padd">Korean Consonant</h6>
+        <table class="table table-dark table-striped  ">
+            <thead>
+                <tr>
+                    <th scope="col">Consonant</th>
+                    <th scope="col">Romanization(initial)</th>
+                    <th scope=" col">Romanization(final)</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">ㄱ</td>
+                    <td class="text-warning">g</td>
+                    <td>k</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㄲ</td>
+                    <td class="text-warning">kk</span></td>
+                    <td>k</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㄴ</td>
+                    <td class="text-warning">n</span></td>
+                    <td>n</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㄷ</td>
+                    <td class="text-warning">d</span></td>
+                    <td>t</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㄸ</td>
+                    <td class="text-warning">tt</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㄹ</td>
+                    <td class="text-warning">r</span></td>
+                    <td>l</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅁ</td>
+                    <td class="text-warning">m</span></td>
+                    <td>m</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅂ</td>
+                    <td class="text-warning">b</span></td>
+                    <td>p</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅃ</td>
+                    <td class="text-warning">pp</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅅ</td>
+                    <td class="text-warning">s</span></td>
+                    <td>t</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅆ</td>
+                    <td class="text-warning">ss</span></td>
+                    <td>t</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅇ</td>
+                    <td class="text-warning">-</span></td>
+                    <td>ng</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅈ</td>
+                    <td class="text-warning">j</span></td>
+                    <td>t</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅉ</td>
+                    <td class="text-warning">jj</span></td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅊ</td>
+                    <td class="text-warning">ch</span></td>
+                    <td>t</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅋ</td>
+                    <td class="text-warning">k</span></td>
+                    <td>k</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅌ</td>
+                    <td class="text-warning">t</span></td>
+                    <td>t</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅍ</td>
+                    <td class="text-warning">p</span></td>
+                    <td>p</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅎ</td>
+                    <td class="text-warning">h</span></td>
+                    <td>t</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h6 id="vowel" class="padd">Korean Vowel</h6>
+        <table class="table table-dark table-striped  ">
+            <thead>
+                <tr>
+                    <th scope="col">Vowel</th>
+                    <th scope="col">Romanization</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">ㅏ</td>
+                    <td class="text-warning">a</td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅐ</td>
+                    <td class="text-warning">ae</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅑ</td>
+                    <td class="text-warning">ya</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅒ</td>
+                    <td class="text-warning">ae</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅓ</td>
+                    <td class="text-warning">eo</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅔ</td>
+                    <td class="text-warning">e</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅕ</td>
+                    <td class="text-warning">yeo</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅖ</td>
+                    <td class="text-warning">ye</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅗ</td>
+                    <td class="text-warning">o</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅘ</td>
+                    <td class="text-warning">wa</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅙ</td>
+                    <td class="text-warning">wae</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅚ</td>
+                    <td class="text-warning">oe</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅛ</td>
+                    <td class="text-warning">yo</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅜ</td>
+                    <td class="text-warning">u</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅝ</td>
+                    <td class="text-warning">wo</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅞ</td>
+                    <td class="text-warning">we</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅟ</td>
+                    <td class="text-warning">wi</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅠ</td>
+                    <td class="text-warning">yu</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅡ</td>
+                    <td class="text-warning">eu</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅢ</td>
+                    <td class="text-warning">ui</span></td>
+                </tr>
+                <tr>
+                    <td scope="row">ㅣ</td>
+                    <td class="text-warning">i</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="text-white bg-black text-center py-3 border-top">Copyright @ 2023 Korean</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
